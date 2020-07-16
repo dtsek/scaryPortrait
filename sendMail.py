@@ -1,4 +1,3 @@
-
 #Enable on crontab: */20 * * * *    /usr/bin/python3 /home/pi/Desktop/projectScaryPortrait/sendMail.py
 
 import shutil
@@ -23,11 +22,11 @@ def checkSpace():
 	sendMailReport(reportStr)
 
 def sendMailReport(reportMsg):
-	gmailUser = 'dennis.tm28@gmail.com'
+	gmailUser = ''
 	gmailPasswd = ''
 
 	fromAddr = 'lovelyLady@raspberry.pi'
-	toAddr = 'dennis.tm28@gmail.com'
+	toAddr = ''
 
 	msg = MIMEMultipart()
 	msg['From'] = fromAddr
